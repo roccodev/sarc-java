@@ -23,4 +23,11 @@ public class SfatHeader {
         hashKey = reader.readInt(offset + 8);
     }
 
+    public short getNodeCount() {
+        return nodeCount;
+    }
+
+    public int getHashKey() {
+        return hashKey;
+    }
 }

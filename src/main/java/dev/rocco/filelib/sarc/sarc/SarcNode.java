@@ -3,6 +3,9 @@ package dev.rocco.filelib.sarc.sarc;
 import dev.rocco.filelib.sarc.io.FileReader;
 
 public class SarcNode {
+
+    public static final short NODE_SIZE = 0x10;
+
     private int offset, nameTableOffset;
 
     private int nameHash, flags, nameOffset;

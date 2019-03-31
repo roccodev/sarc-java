@@ -1,6 +1,7 @@
 package dev.rocco.filelib.sarc.sarc;
 
 import dev.rocco.filelib.sarc.io.FileReader;
+import dev.rocco.filelib.sarc.io.FileWriter;
 import dev.rocco.filelib.sarc.sarc.table.SfatHeader;
 import dev.rocco.filelib.sarc.sarc.table.SfntHeader;
 
@@ -39,6 +40,18 @@ public class SarcHeader {
         sfntHeader.parse(sfatHeader, reader);
 
         return true;
+    }
+
+    public void write(FileWriter writer) {
+        writer.writeString(0, "SARC");
+
+        writer.writeShort(4, HEADER_LENGTH);
+        writer.writeShort(6, (short) 0xFEFF);
+
+        /* File size and data start will be written later */
+
+        writer.writeInt(0x10, 0x0100);
+
     }
 
     public short getByteOrderMark() {

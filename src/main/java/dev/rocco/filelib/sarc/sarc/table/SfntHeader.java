@@ -1,3 +1,7 @@
+// Licensed under GPLv2+
+// Original: https://github.com/zeldamods/sarc/blob/master/sarc/sarc.py
+// Ported to Java by RoccoDev
+// Copyright 2018 leoetlino <leo@leolam.fr>
 package dev.rocco.filelib.sarc.sarc.table;
 
 import dev.rocco.filelib.sarc.io.FileReader;

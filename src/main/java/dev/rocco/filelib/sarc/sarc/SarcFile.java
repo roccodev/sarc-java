@@ -1,7 +1,10 @@
+// Licensed under GPLv2+
+// Original: https://github.com/zeldamods/sarc/blob/master/sarc/sarc.py
+// Ported to Java by RoccoDev
+// Copyright 2018 leoetlino <leo@leolam.fr>
 package dev.rocco.filelib.sarc.sarc;
 
 import dev.rocco.filelib.sarc.io.FileReader;
-import dev.rocco.filelib.sarc.io.FileWriter;
 import dev.rocco.filelib.sarc.sarc.table.SfatHeader;
 import dev.rocco.filelib.sarc.sarc.table.SfntHeader;
 
@@ -19,7 +22,6 @@ public class SarcFile {
 
 
     private FileReader reader;
-    private FileWriter writer;
 
     public SarcFile(File input) {
         reader = new FileReader(input);

@@ -1,3 +1,7 @@
+// Licensed under GPLv2+
+// Original: https://github.com/zeldamods/sarc/blob/master/sarc/sarc.py
+// Ported to Java by RoccoDev
+// Copyright 2018 leoetlino <leo@leolam.fr>
 package dev.rocco.filelib.sarc.util;
 
 import dev.rocco.filelib.sarc.io.FileWriter;
@@ -14,10 +18,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/*
- * Adapted and ported to Java from
- * https://github.com/zeldamods/sarc/blob/master/sarc/sarc.py
- */
 public class FileAlignment {
 
     public static HashMap<String, Integer> alignments = new HashMap<>();

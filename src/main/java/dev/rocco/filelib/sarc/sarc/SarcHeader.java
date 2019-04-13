@@ -30,7 +30,6 @@ public class SarcHeader {
         }
 
         byteOrderMark = reader.readShort(6);
-        System.out.println(byteOrderMark);
 
         fileSize = reader.readInt(8);
 

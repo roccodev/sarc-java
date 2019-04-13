@@ -37,13 +37,13 @@ public class SarcNode {
         name = reader.readString(absoluteNameOffset);
     }
 
-    public static long calculateHash(String name, int length, long key) {
+    public static int calculateHash(String name, int length, long key) {
         long result = 0;
         for(int i = 0; i < length; i++)
         {
             result = name.charAt(i) + result * key;
         }
-        return result;
+        return (int) result;
     }
 
     public int getNameHash() {
